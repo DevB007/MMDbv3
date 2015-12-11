@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">MMDb</string>
+
+    <string name="title_activity_movie_list_popular">MMDb</string>
+    <string name="title_activity_movie_list_rating">Highest Rated Movies</string>
+    <string name="title_activity_movie_list_favorites">Your Favorite Movies</string>
+    <string name="title_activity_movie_detail">Movie Detail</string>
+
+    <string name="action_sort">Sort</string>
+    <string name="action_sort_popularity">Sort by popularity</string>
+    <string name="action_sort_rating">Sort by rating</string>
+    <string name="action_filter_favorites">Your favorites</string>
+
+    <string name="movie_card_backdrop_image_view_description">Movie backdrop image</string>
+
+    <string name="movie_detail_rating">Rating: %.1f/10.0</string>
+    <string name="movie_detail_videos_header">Trailers</string>
+    <string name="movie_detail_open_trailer_button_text">Start trailer #%s</string>
+    <string name="movie_detail_reviews_header">Reviews</string>
+    <string name="movie_detail_poster_image_view_description">Movie poster</string>
+    <string name="movie_detail_favorite_image_view_description">Toggle favorite button</string>
+    <string name="movie_detail_overview_header">Summary</string>
+
+    <string name="error_no_network">Network unavailable</string>
+
+</resources>

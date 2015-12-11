@@ -1,0 +1,4 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.deveshwar.mmdbv3.ui.movies.detail.MovieDetailActivity">
+</menu>

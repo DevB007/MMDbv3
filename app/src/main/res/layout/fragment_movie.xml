@@ -1,0 +1,145 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.deveshwar.mmdbv3.ui.movies.detail.MovieDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/movie_detail_backdrop_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/movie_card_backdrop_image_view_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/movie_detail_poster_image_view"
+                android:layout_width="133dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/movie_detail_poster_image_view_description" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movie_detail_title_text_view"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    tools:text="Fight Club" />
+
+                <ImageButton
+                    android:id="@+id/movie_detail_favorite_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/star_yellow"
+                    android:contentDescription="@string/movie_detail_favorite_image_view_description"
+                    tools:src="@drawable/abc_btn_rating_star_on_mtrl_alpha" />
+
+                <TextView
+                    android:id="@+id/movie_detail_release_date_text_view"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_detail_title_text_view"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    tools:text="19 October 1999" />
+
+                <TextView
+                    android:id="@+id/movie_detail_rating_text_view"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_detail_release_date_text_view"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    tools:text="Rating: 7.7" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:text="@string/movie_detail_overview_header" />
+
+            <TextView
+                android:id="@+id/movie_detail_overview_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground “fight clubs” forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion." />
+
+            <TextView
+                android:id="@+id/movie_detail_videos_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:text="@string/movie_detail_videos_header" />
+
+            <LinearLayout
+                android:id="@+id/movie_detail_videos_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/movie_detail_reviews_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                android:text="@string/movie_detail_reviews_header" />
+
+            <LinearLayout
+                android:id="@+id/movie_detail_reviews_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

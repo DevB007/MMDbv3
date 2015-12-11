@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.deveshwar.mmdbv3.ui.movies.list.MovieListActivity">
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_sort_popularity"
+                android:title="@string/action_sort_popularity" />
+            <item
+                android:id="@+id/action_sort_rating"
+                android:title="@string/action_sort_rating" />
+            <item
+                android:id="@+id/action_filter_favorites"
+                android:title="@string/action_filter_favorites" />
+        </menu>
+
+    </item>
+
+</menu>
